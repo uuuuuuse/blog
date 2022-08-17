@@ -12,7 +12,7 @@ export const installMarkdownPlugins = (md: MarkdownIt) => {
 
   md.use(anchor, {
     slugify,
-    level: [0],
+    level: [2,3,4],
     permalink: anchor.permalink.linkInsideHeader({
       symbol: "#",
       renderAttrs: () => ({ "aria-hidden": "true" })
@@ -28,7 +28,7 @@ export const installMarkdownPlugins = (md: MarkdownIt) => {
   });
 
   md.use(TOC, {
-    includeLevel: [0],
+    includeLevel: [2,3,4],
     slugify
   });
 };

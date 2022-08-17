@@ -27,12 +27,12 @@
       border="t gray-200 dark:gray-600"
     >
       <span class="prev">
-        <RouterLink v-if="prevBlog" hover:underline :to="'..' + prevBlog.path">
+        <RouterLink v-if="prevBlog" hover:underline :to="prevBlog.path">
           {{ prevBlog.title }}
         </RouterLink>
       </span>
       <span class="next text-right">
-        <RouterLink v-if="nextBlog" hover:underline :to="'..' + nextBlog.path">
+        <RouterLink v-if="nextBlog" hover:underline :to="nextBlog.path">
           {{ nextBlog.title }}
         </RouterLink>
       </span>
@@ -83,7 +83,7 @@ onMounted(() => {
       const url = new URL(link.href);
       if (url.origin !== window.location.origin) return;
 
-      event.preventDefault();
+      // event.preventDefault();
       const { pathname, hash } = url;
       if (hash && (!pathname || pathname === location.pathname)) {
         window.history.replaceState({}, "", hash);
@@ -101,7 +101,7 @@ onMounted(() => {
   setTimeout(navigate, 500);
 });
 
-const isTocOpen = ref(false);
+const isTocOpen = ref(true);
 const isToc = ref(false);
 
 onMounted(() => {
