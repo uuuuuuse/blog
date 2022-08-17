@@ -27,12 +27,12 @@
       border="t gray-200 dark:gray-600"
     >
       <span class="prev">
-        <RouterLink v-if="prevBlog" hover:underline :to="prevBlog.path">
+        <RouterLink v-if="prevBlog" hover:underline :to="'..' + prevBlog.path">
           {{ prevBlog.title }}
         </RouterLink>
       </span>
       <span class="next text-right">
-        <RouterLink v-if="nextBlog" hover:underline :to="nextBlog.path">
+        <RouterLink v-if="nextBlog" hover:underline :to="'..' + nextBlog.path">
           {{ nextBlog.title }}
         </RouterLink>
       </span>

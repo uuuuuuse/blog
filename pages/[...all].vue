@@ -2,7 +2,7 @@
   <div class="font-bold absolute top-1/2 -mt-24 left-0 right-0 text-center">
     <p text="5xl">{{ getEmoji() }}</p>
     <h1 text="2xl" m="t-5 b-2">404 - How did we get here?</h1>
-    <RouterLink to="/" class="text-2xl hover:underline">
+    <RouterLink to="../" class="text-2xl hover:underline">
       $ cd /home/
     </RouterLink>
   </div>

@@ -11,7 +11,7 @@
       </div>
       <router-link
         class="flex-1 !no-underline hover:(!underline)"
-        :to="route.path"
+        :to="'..' + route.path"
       >
         {{ route.title }}
       </router-link>

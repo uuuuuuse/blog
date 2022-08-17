@@ -15,19 +15,19 @@
     <router-link
       font="bold"
       un-text="gray-600 hover:black dark:(gray-300 hover:white)"
-      to="/"
+      to="../"
     >
       <span text="lg">$ cd /home/</span>
       <div i-fa6-solid:angle-right class="prompt inline-block" />
       <span class="blink">_</span>
     </router-link>
     <nav class="flex space-x-4">
-      <router-link to="/projects" title="Projects" class="nav-item">
+      <router-link to="../projects" title="Projects" class="nav-item">
         <div i-ph:rocket-launch-duotone class="md:hidden" />
         <span class="lt-md:hidden">项目</span>
       </router-link>
 
-      <router-link to="/posts" title="Blog" class="nav-item">
+      <router-link to="../posts" title="Blog" class="nav-item">
         <div i-majesticons:paper-fold-text-line class="md:hidden" />
         <span class="lt-md:hidden">博客</span>
       </router-link>
