@@ -15,6 +15,7 @@ declare module '@vue/runtime-core' {
     OhVueIcons: typeof import('./components/icons/OhVueIcons.vue')['default']
     Project: typeof import('./components/Project.vue')['default']
     ProjectList: typeof import('./components/ProjectList.vue')['default']
+    Resume: typeof import('./components/resume.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

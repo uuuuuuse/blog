@@ -32,6 +32,11 @@
         <span class="lt-md:hidden">博客</span>
       </router-link>
 
+      <router-link to="/resume" class="nav-item">
+        <!-- <div i-majesticons:paper-fold-text-line class="md:hidden" /> -->
+        <span class="lt-md:hidden">简历</span>
+      </router-link>
+
       <button
         class="nav-item !outline-none"
         title="Toggle dark"

@@ -21,7 +21,15 @@ socials:
   #   name: 中文博客
 ---
 
-# 个人资料 <span text="base gray-600 dark:gray-400">Nothing</span>
+# 林泽伟 <span text="base gray-600 dark:gray-400">前端开发工程师</span>
+  <section class="info">
+    <ul>
+      <li>男 / 1997.03</li>
+      <li>广州市广播电视大学 · 计算机网络技术</li>
+      <li>专科 / 2017年毕业</li>
+      <li>工作年限：5年</li>
+    </ul>
+  </section>
 
 <Links :links="frontmatter.socials" />
 
